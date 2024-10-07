@@ -21,7 +21,6 @@
     .logo{
         margin-top: 20px;
         margin-left: 30px;
-        /* opacity: 0.99; */
     }
 
         .logo img{
@@ -45,18 +44,19 @@
             width: 900px;
             max-height: fit-content;
             max-width: fit-content;
-            margin-left: 600px;
+            margin-left: 550px;
             margin-top: 10px;
-            /* border: 1px black solid; */
         }
 
             .list-1 li{
                 display: inline-block;
-                padding: 15px;
+                padding: 10px;
                 font-size: 16px;
             }
 
-            .list-1 li::after{}
+            .list-1 li>span{
+                margin-left: 10px;
+            }
 
 
             .list1-buttons{
@@ -71,14 +71,14 @@
         }
 
         #login-b{
-            padding: 5px 25px;
+            padding: 8px 28px;
             font-size: 14px;
             color: white;
             font-weight: bold;
         }
 
         #search-b{
-            padding: 5px 8px;
+            padding: 8px 8px;
             color: white;
             margin-left: 10px;
         }
@@ -268,10 +268,140 @@
 
 /* Campuses start */
 .campuses{
-    padding: 50px;
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
+    align-items: center;
     background-image: url(/Assets/bg2.png);
+    border: 1px solid black;
 }
 
-    .
+    .campus-heading{
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+
+    .three-card{
+        width: 1100px;
+        height: fit-content;
+        /* border: 1px solid black; */
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 90px;
+    }
+
+        .card{
+            height: 530px;
+            width: 330px;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgb(154, 153, 153);
+        }
+
+            .card img{
+                width: 100%;
+                border-radius: 10px 10px 0px 0px;
+                height: 50%;
+                object-fit: cover;
+            }
+
+            .content-card{
+                height: 40%;
+                padding: 10px;
+                background-color: white;
+                /* border: 1px solid black; */
+            }
+            
+                .texts-circle{
+                    display: grid;
+                    grid-template-rows: 70px 150px;
+                    grid-template-columns: 80% 20%;
+                }
+
+                    .card-text{
+                        grid-row-start: 1;
+                        grid-row-end: 1;
+                        grid-column-start: 1;
+                        grid-column-end: 1;
+                        /* border: 1px solid black; */
+                        color: #739930;
+                        font-weight: bold;
+                        display: block;
+                        width: fit-content;
+                    }
+                        .maint{
+                            color: #739930;
+                            font-size: 26px;
+                            font-weight: bold;
+                            display: block;
+                            text-align: left;
+                        }
+
+                        .subt{
+                            color: #739930;
+                            font-size: 22px;
+                            margin-top: 18px;
+                            text-align: left;
+                            font-weight: 600;
+                        }
+
+                        #card3 .subt{
+                            margin-top: 10px;
+                            font-size: 22px;
+                        }
+
+
+                    .circle-right{
+                        grid-row-start: 1;
+                        grid-row-end: 1;
+                        grid-column-start: 2;
+                        grid-column-end: 2;
+                        background-color: #739930;
+                        border-radius: 50%;
+                        width: 70px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        /* border: 1px solid black; */
+                    }
+
+                        .circle-right .symbolgt{
+                            color: white;
+                            font-size: 30px;
+                            font-weight: bold;
+                        }
+
+                    .card-content{
+                        grid-row-start: 2;
+                        grid-row-end: 2;
+                        grid-column-start: 1;
+                        grid-column-end: 3;
+                        /* border: 1px solid black; */
+                        padding: 5px;
+                        text-align: left;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        margin-top: 20px;
+                        font-size: 18px;
+                    }
+
+                        #card3 .card-content{
+                            margin-top: 30px;
+                        }
+/* Campuses end */
+
+
+/* Life @ SHC start */
+
+
+            
+
+            
+
+        
+
+
+    
+        
+
+    
