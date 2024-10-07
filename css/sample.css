@@ -1,0 +1,21 @@
+*{
+margin: 0;
+}
+
+
+
+    .block{
+        background-color: aqua;
+        display: inline;
+    }
+
+        .inline{
+            background-color: aquamarine;
+            display: block;
+            width: fit-content;
+        }
+
+                .inline-block{
+                    background-color: blue;
+                    display: inline;
+                }

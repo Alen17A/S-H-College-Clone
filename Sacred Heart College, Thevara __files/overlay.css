@@ -1,0 +1,97 @@
+.toggle-button {
+   
+    top: 25px;
+    right: 10px;
+    padding: 5px;
+    margin: 5px;
+    height: 30px;
+    width: 50px;
+    cursor: pointer;    
+}
+.toggle-button.toggle-active {   
+   
+    z-index: 1022;
+    position: absolute;
+}
+.bar {
+    background-color: #131212;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border: 0;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+}
+.bar + .bar {
+    margin-top: 7px;
+}
+.middle {
+    top: 11px;
+}
+.bottom {
+    top: 22px;
+}
+.toggle-button:hover {
+    opacity: .7;
+}
+.toggle-active .bar {
+    width: 25px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 10px;
+}
+.toggle-active .top {
+    -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
+}
+.toggle-active .middle {
+   opacity: 0;
+}
+.toggle-active .bottom {
+    -webkit-transform: translateY(-12px) translateX(0) rotate(-45deg);
+}
+
+.overlay {
+    z-index: 1021;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .35s, visibility .35s, height .35s;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.nav-active {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+/*    max-height: 340px;*/
+}
+.popup-menu-class .menu, #menu-primary{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.overlay .rootitem{
+    top: 110px;
+    flex: 25%;
+    max-width: 25%;
+    position: relative;
+}
+.overlay .rootitem ul{
+    width: 100%;       
+    left: 0;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+.overlay .topitem h4{
+    /*border-bottom: 1px solid #0a0a0a;*/
+}
+
+.overlay .rootitem ul li a {
+    color: #0a0a0a;
+    text-decoration: none;
+}

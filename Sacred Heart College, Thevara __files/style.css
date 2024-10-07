@@ -1,0 +1,402 @@
+/*
+Theme Name: SH College 2021
+Theme URI: http://www.shcollege.ac.in
+Description: SH College Custom Theme
+Version: 2.1
+Author: Corbel Business Application
+Author URI: https://corbelbiz.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Education
+Text Domain: sh-college
+*/
+
+a:focus, a:hover{
+    text-decoration: none !important;
+}
+p a{
+    text-decoration:underline  !important;
+    color: #739d20 !important;
+}
+.wp-caption{
+}
+.wp-caption-text{
+}
+.sticky{
+}
+.screen-reader-text{
+}
+.gallery-caption{
+}
+.bypostauthor{}
+.alignright{}
+.alignleft{}
+.aligncenter{}
+
+/*custom styles */
+.page .header-top-backgroud-color, .single-faculty .header-top-backgroud-color, .post-type-archive-news .header-top-backgroud-color,
+.single-news .header-top-backgroud-color,.post-type-archive-facility .header-top-backgroud-color,.single-facility .header-top-backgroud-color{
+    background-color: #f3f5f0;
+}
+.single-department .header-top-backgroud-color{
+    background-color: #ffffff;
+}
+.sh-college-tab li{
+    float: left;
+    padding: 5px;
+    list-style: none;
+    width: 33.333333%;
+    text-align: center;
+    font-size: 13px;
+
+
+}
+.sh-college-tab li:hover{
+  background: #739d31;
+  color: #fff;
+}
+.sh-college-tab li.active {
+   
+    border-bottom: 1px solid #739d31;
+    background-color: #FFF;
+}
+.facilities-list{
+  /*border: 1px solid #ccc;*/
+  width: 100%;
+  float: left;
+  margin: 0px;
+  border-top: none !important;
+}
+.facilities-list .active-t{
+    border-bottom: 1px solid #ccc;   
+}
+.facilities-list li{
+  padding-left: 10px;
+}
+.sh-college-tab {
+    width: 100%;
+    margin: 0px;
+    float: left;
+}
+
+.facilities-list li{
+    border-bottom: none;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) { 
+.teacher {
+    width: 93% !important;
+    padding-left: 6% !important;
+}
+    .post-type-archive-history .container,.single-history .container{
+        width: 100%;    
+        padding-left: 82px;
+    }
+}
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */  
+    color: #000; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    text-decoration: none;
+    opacity: .6;
+}
+
+.faculty-image-holder{
+    width: 100%;
+}
+.thr-profile .panel-heading{
+    padding: 0px;
+}
+.faculty-image-holder img{
+    height: 24vh;
+    display: inline-block;
+    overflow: hidden;
+}
+@media (max-width: 767px){
+  .teacher {
+    width: 95% !important;
+    padding-left: 6% !important;
+}
+    .header-top-backgroud-color{
+        margin-bottom: 75px;
+    }
+    .dept-page{
+        margin-top: 88px;
+    }
+    .faculty-image-holder{
+        text-align: center;
+    }
+}
+.club-staff img{
+    max-height: 10vh;
+    display: inline-block;
+}
+.club-staff .club-staff-title{
+    font-size: 70%;
+    text-align: center;
+}
+.club-staff-image-holder{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+.wp-block-audio audio{
+    width: 85% !important;
+    min-width: 250px !important;
+    float: left;  
+}
+
+
+ .panel-default>.panel-heading a[aria-expanded="false"]:after {
+        content: "\002b";
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        font-size: 15px;
+        padding: 6px 6px;
+        font-weight: 100;
+    }
+    .panel-title {
+        margin-top: 32px;
+        margin-bottom: 0;
+        font-size: 16px;
+        color: inherit;
+    }
+    .panel-default>.panel-heading a[aria-expanded="true"]:after {
+        content: "\2212";
+        font-size: 17px;
+        font-weight: 100;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    .panel {
+        border: 0px solid rgba(0, 0, 0, 0);
+    }
+    .panel-default>.panel-heading {
+        color: #333;
+        background-color: #fff;
+        border-color: #e4e5e7;
+        padding: 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .panel-default>.panel-heading a {
+        display: block;
+        padding: 10px 0px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+    .panel-default>.panel-heading a:after {
+
+        padding: 6px 10px;
+
+        content: "";
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        float: right;
+        transition: transform .25s linear;
+        -webkit-transition: -webkit-transform .25s linear;
+    }
+
+    .panel-default>.panel-heading a[aria-expanded="true"] {
+        border-bottom: 0 solid #aec689;
+    }
+
+    .panel-default>.panel-heading {
+        color: rgb(51, 51, 51);
+        border-color: rgb(0, 128, 0);
+        padding: 0;
+        border-bottom: 2px solid #aec689;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .panel-default>.panel-heading a[aria-expanded="true"]:after {
+        content: "\2212";
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .panel-default>.panel-heading a[aria-expanded="false"]:after {
+        content: "\002b";
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    .accordion-option {
+        width: 100%;
+        float: left;
+        clear: both;
+        margin: 15px 0;
+    }
+
+    .accordion-option .title {
+        font-size: 20px;
+        font-weight: bold;
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .accordion-option .toggle-accordion {
+        float: right;
+        font-size: 16px;
+        color: #6a6c6f;
+    }
+
+    .accordion-option .toggle-accordion:before {
+        content: "Expand All";
+    }
+
+    .accordion-option .toggle-accordion.active:before {
+        content: "Collapse All";
+    }
+    .panel-body {
+        padding: 0px 15px 36px 31px;
+    }
+
+ 
+.dropdown-menu > li.kopie > a {
+    padding-left:5px;
+}
+ 
+.sub-menu {
+    position:relative;
+}
+.sub-menu .sub-menu {
+   top:0;right:100% !important;
+   margin-top:-6px;margin-left:-1px;
+   -webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;
+ }
+  
+.sub-menu > a:after {
+  border-color: transparent transparent transparent #333;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+  display: block;
+  float: right;  
+  height: 0;     
+  margin-right: -10px;
+  margin-top: 5px;
+  width: 0;
+}
+ 
+.sub-menu:hover>a:after {
+    border-left-color:#555;
+ }
+
+.sub-menu > li > a:hover, .sub-menu > .active > a:hover {
+  text-decoration: none;
+}  
+  
+@media (max-width: 767px) {
+
+  .navbar-nav  {
+     display: inline;
+  }
+  .navbar-default .navbar-brand {
+    display: inline;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  .navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: red;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-top: 2px;   
+  }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+     color: #333;
+   }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+     background-color: #ccc;
+   }
+
+   .navbar-nav .open .dropdown-menu {
+     border-bottom: 1px solid white; 
+     border-radius: 0;
+   }
+  .dropdown-menu {
+      padding-left: 10px;
+  }
+  .dropdown-menu .dropdown-menu {
+      padding-left: 20px;
+   }
+   .dropdown-menu .dropdown-menu .dropdown-menu {
+      padding-left: 30px;
+   }
+   li.dropdown.open {
+    border: 0px solid red;
+   }
+
+}
+ 
+
+
+.child-page ul{
+ list-style: none;
+ padding: 0px;
+}
+.child-page li{
+padding: 5px;
+color: #fff;
+border-top: 1px solid #fff;
+margin: 0px;
+float: left;
+width: 100%;
+}
+.child-page a{
+  color: #739d31;
+  width: 100%;
+  height: 100%;
+  float: left;
+  padding: 5px;
+  border: 1px solid #739d31;
+  text-align: center;
+}
+.child-page li a:hover{
+   background-color: #739d20;
+   color: #fff;
+}
+@media (min-width: 768px) {
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  #navbar {
+    text-align: center;
+  }
+  
+}  
+
+.fs_vert_type_tabs .fs_tabs_nav{
+    z-index: 0;
+}
+
+.sh-list li{
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 23px;
+    counter-increment: item;
+    margin-bottom: 11px;
+}

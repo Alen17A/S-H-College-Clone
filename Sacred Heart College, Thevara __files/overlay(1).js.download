@@ -1,0 +1,4 @@
+jQuery('#toggle').click(function() {
+    jQuery(this).toggleClass('toggle-active');
+    jQuery('#overlay').toggleClass('nav-active');
+});

@@ -1,0 +1,19 @@
+/* BEGIN custom_code */
+@media (max-width: 590px){ 
+
+      .home .main-page {
+        background-image: url(https://www.shcollege.ac.in/wp-content/uploads/2019/10/College-back-1.jpg) !important;
+        height: 100% !important;
+        background-size: 100%;
+        padding-bottom: 18px;
+        background-attachment:fixed !important;
+        background-position:center !important;
+    }
+.is-stacked-on-mobile img{
+    height:auto;
+}
+}
+.is-stacked-on-mobile img{
+    height:auto;
+}
+/* END custom_code */

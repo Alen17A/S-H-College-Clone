@@ -1,0 +1,178 @@
+//document.getElementById("l1").addEventListener("click", news);
+//news();
+function news() {
+    document.getElementById("cl2").style.display = "none";
+    document.getElementById("cl3").style.display = "none";
+    var e = document.getElementById("cl1");
+    if (e.style.display == 'block')
+        e.style.display = 'none';
+    else
+        e.style.display = 'block';
+    // var i = document.getElementById("find-ar");
+    var re = document.getElementById("ar-right");
+    var le = document.getElementById("ar-left");
+    var hid = document.querySelector(".new-s1");
+    if (le.style.display == 'none') {
+        le.style.display = 'block';
+        re.style.display = 'none';
+        hid.style.display = 'none';
+    } else {
+        re.style.display = 'block';
+        le.style.display = 'none';
+        hid.style.display = 'block';
+    }
+    var re2 = document.getElementById("ar-right2");
+    var le2 = document.getElementById("ar-left2");
+    re2.style.display = 'block';
+    le2.style.display = 'none';
+    var re3 = document.getElementById("ar-right3");
+    var le3 = document.getElementById("ar-left3");
+
+    re3.style.display = 'block';
+    le3.style.display = 'none';
+    var re4 = document.getElementById("ar-right4");
+    var le4 = document.getElementById("ar-left4");
+
+    
+    var hid2 = document.querySelector(".new-s2");
+    hid2.style.display = 'block';
+
+    var hid3 = document.querySelector(".new-s3");
+    hid3.style.display = 'block';
+    var hid4 = document.querySelector(".new-s4");
+    hid4.style.display = 'block';
+
+}
+
+
+// document.getElementById("l2").addEventListener("click", news2);
+function news2() {
+    var e = document.getElementById("cl2");
+    if (e.style.display == 'block')
+        e.style.display = 'none';
+    else
+        e.style.display = 'block';
+    document.getElementById("cl3").style.display = "none";
+    document.getElementById("cl4").style.display = "none";
+    document.getElementById("cl1").style.display = "none";
+    var re = document.getElementById("ar-right2");
+    var le = document.getElementById("ar-left2");
+    var hid2 = document.querySelector(".new-s2");
+    if (le.style.display == 'none') {
+        hid2.style.display = 'none';
+        le.style.display = 'block';
+        re.style.display = 'none';
+    } else {
+        re.style.display = 'block';
+        le.style.display = 'none';
+        hid2.style.display = 'block';
+    }
+    var re1 = document.getElementById("ar-right");
+    var le1 = document.getElementById("ar-left");
+
+    re1.style.display = 'block';
+    le1.style.display = 'none';
+    var re3 = document.getElementById("ar-right3");
+    var le3 = document.getElementById("ar-left3");
+
+    re3.style.display = 'block';
+    le3.style.display = 'none';
+    var re4 = document.getElementById("ar-right4");
+    var le4 = document.getElementById("ar-left4");
+
+    re4.style.display = 'block';
+    le4.style.display = 'none';
+    var hid = document.querySelector(".new-s1");
+    hid.style.display = 'block';
+    var hid3 = document.querySelector(".new-s3");
+    hid3.style.display = 'block';
+    var hid4 = document.querySelector(".new-s4");
+    hid4.style.display = 'block';
+}
+
+// document.getElementById("l3").addEventListener("click", news3);
+function news3() {
+    var e = document.getElementById("cl3");
+    if (e.style.display == 'block')
+        e.style.display = 'none';
+    else
+        e.style.display = 'block';
+    var re3 = document.getElementById("ar-right3");
+    var le3 = document.getElementById("ar-left3");
+    var hid3 = document.querySelector(".new-s3");
+    if (le3.style.display == 'none') {
+        hid3.style.display = 'none';
+        le3.style.display = 'block';
+        re3.style.display = 'none';
+    } else {
+        hid3.style.display = 'block';
+        re3.style.display = 'block';
+        le3.style.display = 'none';
+    }
+
+    document.getElementById("cl4").style.display = "none";
+    document.getElementById("cl1").style.display = "none";
+    document.getElementById("cl2").style.display = "none";
+    var re2 = document.getElementById("ar-right2");
+    var le2 = document.getElementById("ar-left2");
+    re2.style.display = 'block';
+    le2.style.display = 'none';
+    var re1 = document.getElementById("ar-right");
+    var le1 = document.getElementById("ar-left");
+
+    re1.style.display = 'block';
+    le1.style.display = 'none';
+    var re4 = document.getElementById("ar-right4");
+    var le4 = document.getElementById("ar-left4");
+
+    re4.style.display = 'block';
+    le4.style.display = 'none';
+    var hid = document.querySelector(".new-s1");
+    hid.style.display = 'block';
+    var hid2 = document.querySelector(".new-s2");
+    hid2.style.display = 'block';
+    var hid4 = document.querySelector(".new-s4");
+    hid4.style.display = 'block';
+
+}
+jQuery(document).ready(function () {
+
+    // HEADER TOGGLE
+    jQuery('.sldm-toggle, .sldm-overlay').on("click", function (e) {
+        e.preventDefault();
+        jQuery('.sldm').toggleClass('sldm-active');
+        jQuery('.sldm-bg-image').toggleClass('active');
+    });
+
+    jQuery('.sldm-submenu  a').on("click", function (e) {
+        //e.preventDefault();
+        jQuery(this).toggleClass('sldm-open');
+        jQuery(this).parent().find('>ul').slideToggle(450);
+    });
+
+    jQuery('.sldm-widget-toggle').on("click", function (e) {
+        e.preventDefault();
+        jQuery(jQuery(this).data('target')).slideToggle(300);
+    });
+
+    // SEARCH
+    jQuery('.custom-search').click(function(){
+        console.log('search-icon clicked');
+        jQuery('#search-input').removeClass('hide');
+        jQuery('#search-input').removeClass('d-none');
+        jQuery('#search-input').focus();
+        jQuery('#search-icon').addClass('hide');
+    })
+    jQuery('#search-input').focusout(function(){
+        // jQuery('#search-icon').removeClass('hide');
+        jQuery('#search-input').addClass('d-none');
+        jQuery('#search-input').addClass('hide');
+    })
+
+});
+jQuery(function($) {
+    $(".verticaltext.header").click(function(){
+      $(".announce-details").slideToggle();
+    });
+  });
+  
