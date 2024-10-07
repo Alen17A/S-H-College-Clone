@@ -203,14 +203,15 @@
         border-collapse: collapse;
     }
 
-    
+        .notifi-rows{
+            padding: 30px 30px;
+        }
 
         #no1{
             grid-row-start: 1;
             grid-row-end: 1;
             grid-column-start: 1;
             grid-column-end: 1;
-            padding: 30px 30px;
             border: 1px solid black;
         }
 
