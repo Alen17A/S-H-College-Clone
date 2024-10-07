@@ -133,7 +133,7 @@
     display: block;
 }
 
-/* Notification grid 1x4 */
+    /* Notification grid 1x4 */
     .single-row{
         width: fit-content;
         display: grid;
@@ -192,38 +192,40 @@
             border-collapse: collapse;
         }
 
-/* Notifications area */
+    /* Notifications area */
     .notification-area{
         display: grid;
-        border: 1px solid black;
-        grid-template-rows: 220px 220px 220px 220px 220px;
-        grid-template-columns: 850px;
+        grid-template-rows: 220px 220px 180px 220px 150px;
+        grid-template-columns: 930px;
         width: fit-content;
-        margin: 0px 330px 70px;
+        margin: 0px 280px 70px;
         border-collapse: collapse;
     }
 
         .notifi-rows{
-            padding: 30px 30px;
+            padding: 30px 70px;
+            border: 1px solid black;
+            border-top: none;
+            border-right: none;
+            border-left: none;
         }
+
+        .notifi-rows h2{
+            color: #739930;
+        }
+
+        .notifi-rows .content{
+                margin-top: 20px;
+                line-height: 25px;
+                font-size: 14.4px;
+            }
 
         #no1{
             grid-row-start: 1;
             grid-row-end: 1;
             grid-column-start: 1;
             grid-column-end: 1;
-            border: 1px solid black;
         }
-
-            #no1 h2{
-                color: #739930;
-            }
-
-            .content{
-                margin-top: 20px;
-                line-height: 25px;
-                font-size: 14.4px;
-            }
 
             #no1 a{
                 color: royalblue;
@@ -235,7 +237,6 @@
             grid-row-end: 2;
             grid-column-start: 1;
             grid-column-end: 1;
-            background-color: yellow;
         }
 
         #no3{
@@ -243,7 +244,6 @@
             grid-row-end: 3;
             grid-column-start: 1;
             grid-column-end: 1;
-            background-color: red;
         }
 
         #no4{
@@ -251,7 +251,6 @@
             grid-row-end: 4;
             grid-column-start: 1;
             grid-column-end: 1;
-            background-color: aqua;
         }
 
         #no5{
@@ -259,5 +258,5 @@
             grid-row-end: 5;
             grid-column-start: 1;
             grid-column-end: 1;
-            background-color: #739930;
         }
+/* Notifications end */
