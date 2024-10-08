@@ -687,7 +687,7 @@
         display: flex;
         width: 1150px;
         height: fit-content;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         margin: auto;
         margin-top: 30px;
         gap: 50px;
@@ -729,6 +729,7 @@
 
                 .o-card-content h2{
                     color: #759B3E;
+                    font-weight: 800;
                 }
 
                 .o-card-content h3{
@@ -744,7 +745,45 @@
                     color: grey;
                     line-height: 1.4;
                     text-align: justify;
+                    font-size: 18px;
                 }
+
+            #o-card-content3{
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+
+    .two-circles{
+        width: 100%;
+        height: fit-content;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top: 30px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+        .d-circles{
+            width: 15px;
+            height: 15px;
+            border: 1px solid #759B3E;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+            #d-circle2 .color-inside{
+                width: 10px;
+                height: 10px;
+                background-color: #759B3E;
+                margin: auto;
+                border-radius: 50%;
+            }
+/* Details and Opinions start */
+
+
 
 
             
