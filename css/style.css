@@ -114,6 +114,7 @@
     display: flex;
     align-items: center;
     margin-top: 125px;
+    text-align: center;
 }
 
     .mv-notifi h3{
@@ -269,13 +270,13 @@
 /* Campuses start */
 .campuses{
     display: block;
+    border: 1px solid white;
+    background-image: url(/Assets/bg2.png);
     text-align: center;
     align-items: center;
-    background-image: url(/Assets/bg2.png);
-    border: 1px solid black;
 }
 
-    .campus-heading{
+    .campus-heading h1{
         margin-top: 50px;
         margin-bottom: 70px;
     }
@@ -392,6 +393,358 @@
 
 
 /* Life @ SHC start */
+.lifeshc{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+    .life-img{
+        width: 50%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+        .life-bg{
+            width: 500px;
+            height: 500px;
+        }
+
+        .life-students{
+            width: 500px;
+            height: 400px;
+            position: absolute;
+            border-radius: 50px;
+            margin-left: 140px;
+        }
+
+    .life-text{
+        width: 50%;
+        padding: 170px 130px
+    }
+
+        .life-text-heading{
+            color: #739930;
+            font-size: 35px;
+            font-weight: 500;
+        }
+
+        .life-text-content{
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-weight: 300;
+            line-height: 1.6;
+            width: 600px;
+            text-align: justify;
+        }
+
+        .read-more{
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            width: 100px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+/* Life @ SHC end */
+
+
+/* Photos start*/
+.photos{
+    display: grid;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 900px;
+    height: fit-content;
+    margin: 80px 0px 20px 250px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+    .pho{
+        border-radius: 20px;
+    }
+
+    .pho img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+        #ph1{
+            grid-row: 1;
+            grid-column: 1;
+            /* border: 1px solid black; */
+        }
+
+
+        #ph2{
+            grid-row: 1;
+            grid-column: 2;
+            /* border: 1px solid black; */
+        }
+
+        #ph3{
+            grid-row: 1;
+            grid-column: 3/5;
+            /* border: 1px solid black; */
+        }
+
+        #ph4{
+            grid-row: 2;
+            grid-column: 1/3;
+            /* border: 1px solid black; */
+        }
+
+        #ph5{
+            grid-row: 2;
+            grid-column: 3;
+            /* border: 1px solid black; */
+        }
+
+        #ph6{
+            grid-row: 2;
+            grid-column: 4;
+            /* border: 1px solid black; */
+        }
+/* Photos end */
+
+
+/* Achievements start */
+.achievements{
+    width: 100%;
+    height: fit-content;
+    border: 1px solid white;
+    box-sizing: border-box;
+    background-image: linear-gradient(to left, rgb(242, 239, 239), white)
+}
+
+    .achiev-heading{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    .achiev-photos{
+        display: grid;
+        grid-template-rows: 250px 250px;
+        grid-template-columns: 50% 50%;
+        width: 1100px;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 30px;
+        gap: 20px;
+    }
+
+        .ach-ph1{
+            /* border: 1px solid black; */
+            border-radius: 20px;
+        }
+
+            .ach-ph1 img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+
+        #achiev-ph1{
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        #achiev-ph2{
+            grid-row: 1/3;
+            grid-column: 2;
+        }
+
+        #achiev-ph3{
+            grid-row: 2;
+            grid-column: 1;
+        }
+/* Achievements end */
+
+
+/* Details and Opinions start */
+.details{
+    width: 100%;
+}
+
+    .college-overall{
+        display: flex;
+        width: 1100px;
+        height: 450px;
+        margin: auto;
+        margin-top: 50px;
+        /* border: 1px solid black; */
+        gap: 20px;
+    }
+
+        .d-card{
+            width: 300px;
+            /* border: 1px solid black; */
+            border-radius: 20px;
+            background: linear-gradient(to right, #759B3E, #50A667);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            /* overflow: hidden; */
+        }
+
+            .d-card .dcard-content1{
+                text-align: center;
+                display: block;
+                color: white;
+            }
+
+                #opened{
+                    font-size: 25px;
+                    display: block;
+                    margin: auto;
+                }
+
+                #nineteen{
+                    font-size: 50px;
+                }
+
+            .d-card .dcard-content2{
+                height: fit-content;
+                text-align: center;
+                display: block;
+                color: white;
+                padding: 20px 0px 0px 0px;
+            }
+
+                #programmes{
+                    font-weight: 500;
+                }
+
+                #ug25{
+                    margin-top: 20px;
+                    font-size: 50px;
+                }
+
+                #pg20{
+                    margin-top: 20px;
+                    font-size: 50px;
+                }
+
+                #one{
+                    margin-top: 20px;
+                    font-size: 50px;
+                }
+
+                #integrated{
+                    margin-top: 20px;
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+
+                #pg{
+                    margin-top: 20px;
+                    font-weight: 500;
+                    font-size: 30px;
+                }
+
+             .d-card .dcard-content3{
+                height: fit-content;
+                text-align: center;
+                display: block;
+                color: white;
+            }
+
+                #phd{
+                    font-size: 25px;
+                    font-weight: 500;
+                }
+
+                #seven{
+                    font-size: 50px;
+                }
+
+            .d-card .dcard-content4{
+                height: fit-content;
+                text-align: center;
+                display: block;
+                color: white;
+            }
+
+                #dstudents{
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+
+                #fourthou{
+                    font-size: 50px;
+                }
+
+    .opinions{
+        display: flex;
+        width: 1150px;
+        height: fit-content;
+        border: 1px solid black;
+        margin: auto;
+        margin-top: 30px;
+        gap: 50px;
+    }
+
+        .o-card{
+            width: 400px;
+            height: 500px;
+            border: 3px solid #759B3E;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+
+            .o-card-img{
+                height: 150px;
+                width: 150px;
+                margin: auto;
+                margin-top: 30px;
+                /* border: 1px solid black; */
+            }
+
+                .o-card-img img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+
+            .o-card-content{
+                width: 100%;
+                height: fit-content;
+                /* border: 1px solid black; */
+                display: block;
+                text-align: center;
+                margin-top: 30px;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+
+                .o-card-content h2{
+                    color: #759B3E;
+                }
+
+                .o-card-content h3{
+                    width: 250px;
+                    margin: auto;
+                    margin-top: 15px;
+                    color: #759B3E;
+                    font-weight: 300;
+                }
+
+                .o-card-content p{
+                    margin-top: 20px;
+                    color: grey;
+                    line-height: 1.4;
+                    text-align: justify;
+                }
 
 
             
